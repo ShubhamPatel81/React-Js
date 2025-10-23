@@ -18,6 +18,13 @@ import PassFunctionComponent from "./Code/PassFunctionComponent";
 import ForWardRef from "./Code/ForWardRef";
 import UseFormStatusHook from "./Code/useFormStatusHook";
 import UseTransitionHook from "./Code/UseTransitionHook";
+import DrivedState from "./Code/DrivedState";
+import UseActionHook from "./Code/UseActionHook";
+import UseIdHook from "./Code/UseIdHook";
+import Frafment from "./Code/Frafment";
+import ContextApi from "./Code/ContextApi/ContextApi";
+import useToggle from "./Code/CustomHook/useToggle";
+import ToggleComponent from "./Code/CustomHook/ToggleComponent";
 
 function App() {
   const navigate = useNavigate(); // Hook for navigation
@@ -51,6 +58,24 @@ function App() {
         <button onClick={() => navigate("/useTransactionHook ")}>
           Go to useTransactionHook Page{" "}
         </button>
+        <button onClick={() => navigate("/drivedState ")}>
+          Go to Drived State Page{" "}
+        </button>
+        <button onClick={() => navigate("/useActionHook ")}>
+          Go to UseActionHook Page{" "}
+        </button>
+        <button onClick={() => navigate("/useIdHook ")}>
+          Go to useIdHook Page{" "}
+        </button>
+        <button onClick={() => navigate("/fragment ")}>
+          Go to Fragment Page{" "}
+        </button>
+        <button onClick={() => navigate("/contextApi ")}>
+          Go to Context API Page{" "}
+        </button>
+        <button onClick={() => navigate("/customHook ")}>
+          Go to customHook Page{" "}
+        </button>
       </div>
 
       <Routes>
@@ -65,10 +90,16 @@ function App() {
           path="/uncontrolledComponent"
           element={<UncontrolledComponent />}
         />
+        <Route path="/drivedState" element={<DrivedState />} />
         <Route path="/passComponent" element={<PassFunctionComponent />} />
         <Route path="/forwardRef" element={<ForWardRef />} />
         <Route path="/useFormStatus" element={<UseFormStatusHook />} />
         <Route path="/useTransactionHook" element={<UseTransitionHook />} />
+        <Route path="/useActionHook" element={<UseActionHook />} />
+        <Route path="/useIdHook" element={<UseIdHook />} />
+        <Route path="/fragment" element={<Frafment />} />
+        <Route path="/contextApi" element={<ContextApi />} />
+        <Route path="/customHook" element={<ToggleComponent />} />
       </Routes>
     </div>
   );
