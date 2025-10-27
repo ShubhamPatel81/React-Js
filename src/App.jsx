@@ -25,6 +25,7 @@ import Frafment from "./Code/Frafment";
 import ContextApi from "./Code/ContextApi/ContextApi";
 import useToggle from "./Code/CustomHook/useToggle";
 import ToggleComponent from "./Code/CustomHook/ToggleComponent";
+import TailwindCSS from "./Code/TailwindCSS";
 
 function App() {
   const navigate = useNavigate(); // Hook for navigation
@@ -76,6 +77,12 @@ function App() {
         <button onClick={() => navigate("/customHook ")}>
           Go to customHook Page{" "}
         </button>
+        <button onClick={() => navigate("/tailwindcss ")}>
+          Go to Tailwind css Page{" "}
+        </button>
+        <button onClick={() => navigate("/api ")}>
+          Go to API Page{" "}
+        </button>
       </div>
 
       <Routes>
@@ -100,6 +107,8 @@ function App() {
         <Route path="/fragment" element={<Frafment />} />
         <Route path="/contextApi" element={<ContextApi />} />
         <Route path="/customHook" element={<ToggleComponent />} />
+        <Route path="/tailwindcss" element={<TailwindCSS />} />
+        <Route path="/api" element={<TailwindCSS />} />
       </Routes>
     </div>
   );
