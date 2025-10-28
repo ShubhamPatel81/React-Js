@@ -26,8 +26,11 @@ import ContextApi from "./Code/ContextApi/ContextApi";
 import useToggle from "./Code/CustomHook/useToggle";
 import ToggleComponent from "./Code/CustomHook/ToggleComponent";
 import TailwindCSS from "./Code/TailwindCSS";
+import ApiGetData from "./API/ApiGetData";
+import ApiCrud from "./API/ApiCRUD/ApiCrud";
+import UserAdd from "./API/ApiCRUD/UserAdd";
 
-function App() {
+export default function App() {
   const navigate = useNavigate(); // Hook for navigation
 
   return (
@@ -80,8 +83,9 @@ function App() {
         <button onClick={() => navigate("/tailwindcss ")}>
           Go to Tailwind css Page{" "}
         </button>
-        <button onClick={() => navigate("/api ")}>
-          Go to API Page{" "}
+        <button onClick={() => navigate("/api ")}>Go to API Page </button>
+        <button onClick={() => navigate("/apicrud ")}>
+          Go to CRUD API Page{" "}
         </button>
       </div>
 
@@ -108,18 +112,22 @@ function App() {
         <Route path="/contextApi" element={<ContextApi />} />
         <Route path="/customHook" element={<ToggleComponent />} />
         <Route path="/tailwindcss" element={<TailwindCSS />} />
-        <Route path="/api" element={<TailwindCSS />} />
+        <Route path="/api" element={<ApiGetData />} />
+        <Route path="apicrud">
+          <Route path="/apicrud" element={<ApiCrud />} />
+          <Route path="/apicrud/add" element={<UserAdd />} />
+        </Route>
       </Routes>
     </div>
   );
 }
 
-function AppWrapper() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  );
-}
+// function AppWrapper() {
+//   return (
+//     <Router>
+//       <App />
+//     </Router>
+//   );
+// }
 
-export default AppWrapper;
+// export default AppWrapper;

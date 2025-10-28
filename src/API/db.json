@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Guru",
+      "age": 20,
+      "email": "guru@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Sam",
+      "age": 22,
+      "email": "sam@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Bob",
+      "age": 24,
+      "email": "bob@gmail.com"
+    },
+    {
+      "id": "4",
+      "title": " Guru title",
+      "views": 300
+    },
+    {
+      "id": "0847",
+      "name": "s",
+      "age": "21",
+      "email": "s@gmail.com"
+    },
+    {
+      "id": "7f49",
+      "name": "s",
+      "age": "21",
+      "email": "s@gmail.com"
+    },
+    {
+      "id": "6aac",
+      "name": "",
+      "age": "",
+      "email": ""
+    },
+    {
+      "id": "43e8",
+      "name": "p",
+      "age": "21",
+      "email": "p@gmail.com"
+    },
+    {
+      "id": "654c",
+      "name": "",
+      "age": "",
+      "email": ""
+    },
+    {
+      "id": "9c02",
+      "name": "",
+      "age": "",
+      "email": ""
+    },
+    {
+      "id": "a205",
+      "name": "as",
+      "age": "21",
+      "email": "as@gmail.com"
+    },
+    {
+      "id": "2f2c",
+      "name": "",
+      "age": "",
+      "email": ""
+    }
+  ]
+}
